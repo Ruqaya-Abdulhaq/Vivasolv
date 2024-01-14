@@ -1,0 +1,128 @@
+.main-banner{
+    background-color: #1c1d1e;
+    background-image: url("../shared-images/home-banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    color: #ffffff;
+}
+
+.main-banner img{
+    padding-top: 100px;
+    height: 500px;
+    width: auto;
+}
+
+.search-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondary-section {
+    background-color: #fefaf3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 50px 100px;
+}
+
+.img-section{
+    padding: 7px;
+    border: 15px solid #b69d74;
+}
+
+.secondary-section .img-section img{
+    height: 600px;
+    width: auto;
+}
+
+.secondary-section p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.point{
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.point img{
+    margin-right: 5px;
+}
+
+.advantages-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.join-btn{
+    margin-top: 15px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.third-section{
+    padding: 50px 100px;
+}
+
+.third-section p, .third-section h1{
+    text-align: center;
+}
+
+.third-section p{
+    color: #b69d74;
+}
+
+.third-section h1{
+    font-size: 36px;
+}
+
+.category-card{
+    width: 100%;
+    height: 350px;
+    max-height: 350px;
+    background-color: #1d1c1c;
+    color: #ffffff;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container {
+    background-color: #4c4b4b;
+    padding: 5px;
+    border: 5px solid #2d2c2c;
+}
+
+.img-container img{
+    width: 50px;
+    height: 50px;
+}
+
+.category-card h3{
+    font-size: 24px;
+}
+
+.category-card p {
+    color: #ffffff;
+    padding: 0px 15px;
+    line-height: 1.5;
+}
+
+.first-row{
+    margin-bottom: 20px;
+}
+
+.load-btn{
+    margin-top: 30px;
+    text-align: center;
+}

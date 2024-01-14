@@ -1,0 +1,102 @@
+.content-area{
+    margin-top: 100px;
+    height: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-area{
+    background-image: url("../shared-images/contact-banner.jpeg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    padding: 15px 10% 0 10%;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 110px;
+}
+
+.title-area{
+    text-align: center;
+}
+
+.contact-info-area{
+    background-color: #1c1d1e;
+    padding: 30px;
+    /* display: flex;
+    justify-content: space-around; */
+    width: 100%;
+}
+
+.contact-info-box{
+    border: 3px solid #b69d74;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    max-height: 150px;
+}
+
+.contact-info-box .img-container{
+    background-color: #4c4b4b;
+    padding: 5px;
+    border: 5px solid #2d2c2c;
+    margin-right: 10px;
+    height: fit-content;
+}
+
+.form-section{
+    text-align: center;
+    padding: 10px 120px;
+    width: 80%;
+}
+
+.form-section h3{
+    color: #b69d74;
+}
+
+.contact-input{
+    color: #333333;
+}
+
+.message-input{
+    height: 150px;
+    color: #333333;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section{
+    margin-bottom: 20px;
+}
+
+.radio-btns{
+    display: flex;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    border: 2px solid #b69d74;
+}
+
+.select-input{
+    height: 45px;
+    width: 100%;
+    border: 2px solid #b69d74;
+}
+
+#liveToast{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.btn-primary{
+    background-color: #b69d74;;
+}
