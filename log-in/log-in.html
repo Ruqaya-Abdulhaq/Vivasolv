@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VivaSolv</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="../basic.css" rel="stylesheet">
+        <link href="../form.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #242323; height: 110px;">
+        <div class="container" style="background-color: #242323; height: 110px; width: 100%;">
+            <a class="navbar-brand" href="../home/home.html">
+                <img src="../shared-images/logo.png" alt="logo.png" class="navbar-logo" style="height: 108px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: space-evenly;">
+                <ul class="navbar-nav">
+                    <li class="navitem">
+                        <a class="nav-link" href="../home/home.html">Home</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="../about us/AboutUS.html">About us</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="../contact/contact.html">Contact us</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="../review/review.html">Testimonial</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="../categories/categories.html">Categories</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="../site map/SiteMap.html">Site map</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="../application/join.html">Join us</a>
+                    </li>
+                </ul>
+                <div class="nav-btns">
+                    <a class="nav-btn" href="../sign-up/sign-up.html">
+                        <button class="btn btn-light" style="border-radius: 2;">Sign up</button>
+                    </a>
+                    <a class="nav-btn" href="../log-in/log-in.html">
+                        <button class="btn btn-light" style="border-radius: 2;">Log in</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+        <div class="content-area">
+            <div class="banner-area">
+                <div class="title-area">
+                    <h1>Log in</h1>
+                    <h3>Welcome back!</h3>
+                </div>
+            </div>
+            <div class="form-section">
+                <form class="contact-form row">
+                    <div class="col-lg-12">
+                        <div class="input-section">
+                            <input id="email" class="text-input contact-input" type="email" name="email" placeholder="Email"/>
+                            <p class="warning-msg" id="msg-email"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="input-section">
+                            <input id="password" class="text-input contact-input" type="password" name="password" placeholder="Password"/>
+                            <p class="warning-msg" id="msg-password"></p>
+                        </div>
+                    </div>
+                </form>
+                <button onclick="submit()" class="primary-btn">Submit</button>
+            </div>
+        </div>
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-item">
+                            <a class="nav-logo" href="../home/home.html">
+                                <img src="../shared-images/logo.png" alt="logo.png">
+                            </a>
+                            <p>
+                                Discover a community of experts, enthusiasts, and volunteers who are committed to
+                                delivering
+                                excellence, fostering personal growth, and making a positive impact on society.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-item">
+                            <div class="footer-links">
+                                <h3>Categories</h3>
+                                <ul>
+                                    <li><a href="../results.html">Education</a></li>
+                                    <li><a href="./results.html">Fashion</a></li>
+                                    <li><a href="./results.html">Medical</a></li>
+                                    <li><a href="./results.html">Volunteer</a></li>
+                                    <li><a href="./results.html">Home improvements</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-item">
+                            <div class="footer-links">
+                                <h3>Quick links</h3>
+                                <ul>
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="../about us/AboutUS.html">About us</a></li>
+                                    <li><a href="./websitep/style.html">Categories</a></li>
+                                    <li><a href="SiteMap.html">Site map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="footer-item">
+                            <div class="footer-links">
+                                <h3>Find us</h3>
+                                <ul>
+                                    <li>
+                                        <img src="../shared-images/phone-icon.png" alt="phone-icon">
+                                        0798436681
+                                    </li>
+                                    <li>
+                                        <img src="../shared-images/phone-icon.png" alt="phone-icon">
+                                        0796211284
+                                    </li>
+                                    <li>
+                                        <img src="../shared-images/email-icon.png" alt="email-icon">
+                                        ruqia334@gmail.com
+                                    </li>
+                                    <li>
+                                        <img src="../shared-images/email-icon.png" alt="email-icon">
+                                        AminaNajme43@gmail.com
+                                    </li>
+                                    <li>
+                                        <img src="../shared-images/location-icon.png" alt="email-icon">
+                                        Amman, Jordan
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <p>
+                    &copy; 2023 ASU. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+        </div>
+    </footer>
+        <div class="toast align-items-center text-bg-success border-0" id="liveToast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+              <div class="toast-body">
+                Logged In Successfully!
+              </div>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="../script.js"></script>
+        <script>
+
+            function submit(){
+               var formValid = validate();
+               if(formValid){
+                    displayToast();
+                    setTimeout(()=>{
+                        goHome();
+                    },1000)
+               }
+            }
+
+            function validate(){
+                
+                var emailValue = document.getElementById("email").value;
+                var passwordValue= document.getElementById("password").value;
+
+                
+                var emailVlaid = setMessage("msg-email", emailValue);
+                var passwordValid = setMessage("msg-password", passwordValue);
+                
+                if(emailVlaid && passwordValid){
+                    return true;
+                }
+            }
+        </script>
+    </body>
+</html>
