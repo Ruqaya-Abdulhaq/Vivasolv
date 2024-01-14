@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VivaSolv</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../basic.css" rel="stylesheet">
+    <link href="../form.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #242323; height: 110px;">
+        <div class="container" style="background-color: #242323; height: 110px; width: 100%;">
+            <a class="navbar-brand" href="../home/home.html">
+                <img src="../shared-images/logo.png" alt="logo.png" class="navbar-logo" style="height: 108px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: space-evenly;">
+                <ul class="navbar-nav">
+                    <li class="navitem">
+                        <a class="nav-link" href="../home/home.html">Home</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="../about-us/AboutUS.html">About us</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="../contact/contact.html">Contact us</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="../review/review.html">Testimonial</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="../categories/categories.html">Categories</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="../sitemap/SiteMap.html">Site map</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="join.html">Join us</a>
+                    </li>
+                </ul>
+                <div class="nav-btns">
+                    <a class="nav-btn" href="../sign-up/sign-up.html">
+                        <button class="btn btn-light" style="border-radius: 2;">Sign up</button>
+                    </a>
+                    <a class="nav-btn" href="../log-in/log-in.html">
+                        <button class="btn btn-light" style="border-radius: 2;">Log in</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <span id="up"></span>
+
+    <!-- content -->
+    <div class="content-area">
+        <div class="banner-area">
+            <div class="title-area">
+                <h1>Member Application</h1>
+                <h3>Join us today!</h3>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h1>Please fill your information</h1>
+            <span class="pt-3 ms-4" id="currentdate"></span>
+        </div>
+        <div class="form-section">
+            <form class="contact-form">
+                <div class="input-section row">
+                    <div class="col-lg-6">
+                        <input class="text-input contact-input" id="f-name" name="f-name" placeholder="First Name" />
+                        <p class="warning-msg" id="msg-fname"></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <input class="text-input contact-input" id="l-name" name="l-name" placeholder="Last Name" />
+                        <p class="warning-msg" id="msg-lname"></p>
+                    </div>
+                </div>
+                <div class="input-section row">
+                    <div class="col-lg-6">
+                        <input class="text-input contact-input" type="email" id="email" name="email"
+                            placeholder="Email" />
+                        <p class="warning-msg" id="msg-email"></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <input class="text-input contact-input" id="password" type="password" name="password"
+                            placeholder="Password" />
+                        <p class="warning-msg" id="msg-password"></p>
+                    </div>
+                </div>
+                <div class="input-section row">
+                    <div class="col-lg-6">
+                        <div class="radio-btns">
+                            <div class="radio-input">
+                                <input type="radio" id="female" name="gender" value="Female" />
+                                <label for="#female">Female</label>
+                            </div>
+                            <div class="radio-input ms-4">
+                                <input type="radio" id="male" name="gender" value="Male" />
+                                <label for="#male">Male</label>
+                            </div>
+                        </div>
+                        <p class="warning-msg" id="msg-gender"></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <select id="city" class="select-input">
+                            <option selected hidden>City</option>
+                            <option value="Amman">Amman</option>
+                            <option value="Irbid">Irbid</option>
+                            <option value="Zarqa">Zarqa</option>
+                            <option value="Ajloun">Ajloun</option>
+                            <option value="Balqa'a">Balqa'a</option>
+                            <option value="Jerash">Jerash</option>
+                            <option value="Karak">Karak</option>
+                        </select>
+                        <p class="warning-msg" id="msg-city"></p>
+                    </div>
+                </div>
+                <div class="input-section row">
+                    <div class="col-lg-6">
+                        <input class="text-input contact-input" id="date" type="date" name="date"
+                            placeholder="Date of birth" />
+                        <p class="warning-msg" id="msg-date"></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <select id="category" class="select-input">
+                            <option selected hidden>Category you work in</option>
+                            <option value="Educational Services">Educational Services</option>
+                            <option value="Medical Services">Medical Services</option>
+                            <option value="Fashoin and Style">Fashoin and Style</option>
+                            <option value="Artisans And Home">Artisans And Home</option>
+                            <option value="Automotive And Vehicle">Automotive And Vehicle</option>
+                            <option value="Volunteers And Humanitarian">Volunteers And Humanitarian</option>
+                        </select>
+                        <p class="warning-msg" id="msg-category"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <select id="plan" class="select-input">
+                            <option selected hidden>Subscription Plan</option>
+                            <option value="10">Reqular 10 JOD/month</option>
+                            <option value="20">Premium 20 JOD/month</option>
+                            <option value="30">VIP 30 JOD/month (includes ads)</option>
+                        </select>
+                        <p class="warning-msg" id="msg-plan"></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <input class="text-input contact-input" id="months" type="number" name="months"
+                            placeholder="Plan duration in months" />
+                        <p class="warning-msg" id="msg-months"></p>
+                    </div>
+                </div>
+            </form>
+            <button onclick="submit()" class="primary-btn">Submit</button>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-item">
+                            <a class="nav-logo" href="../home/home.html">
+                                <img src="../shared-images/logo.png" alt="logo.png">
+                            </a>
+                            <p>
+                                Discover a community of experts, enthusiasts, and volunteers who are committed to
+                                delivering
+                                excellence, fostering personal growth, and making a positive impact on society.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-item">
+                            <div class="footer-links">
+                                <h3>Categories</h3>
+                                <ul>
+                                    <li><a href="../results.html">Education</a></li>
+                                    <li><a href="./results.html">Fashion</a></li>
+                                    <li><a href="./results.html">Medical</a></li>
+                                    <li><a href="./results.html">Volunteer</a></li>
+                                    <li><a href="./results.html">Home improvements</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-item">
+                            <div class="footer-links">
+                                <h3>Quick links</h3>
+                                <ul>
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="../about-us/AboutUS.html">About us</a></li>
+                                    <li><a href="./websitep/style.html">Categories</a></li>
+                                    <li><a href="SiteMap.html">Site map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="footer-item">
+                            <div class="footer-links">
+                                <h3>Find us</h3>
+                                <ul>
+                                    <li>
+                                        <img src="../shared-images/phone-icon.png" alt="phone-icon">
+                                        0798436681
+                                    </li>
+                                    <li>
+                                        <img src="../shared-images/phone-icon.png" alt="phone-icon">
+                                        0796211284
+                                    </li>
+                                    <li>
+                                        <img src="../shared-images/email-icon.png" alt="email-icon">
+                                        ruqia334@gmail.com
+                                    </li>
+                                    <li>
+                                        <img src="../shared-images/email-icon.png" alt="email-icon">
+                                        AminaNajme43@gmail.com
+                                    </li>
+                                    <li>
+                                        <img src="../shared-images/location-icon.png" alt="email-icon">
+                                        Amman, Jordan
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <p>
+                    &copy; 2023 ASU. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+        </div>
+    </footer>
+
+    <div class="toast align-items-center text-bg-success border-0" id="liveToast" role="alert" aria-live="assertive"
+        aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Application sent Successfully!
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Review Application</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Name: <span id="name-p"></span></p>
+                    <p>Email: <span id="email-p"></span></p>
+                    <p>Gender: <span id="gender-p"></span></p>
+                    <p>City: <span id="city-p"></span></p>
+                    <p>Age: <span id="age-p"></span></p>
+                    <p>Category: <span id="category-p"></span></p>
+                    <p>Plan Cost: <span id="cost-p"> </span>JOD</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" onclick="review()" class="btn btn-primary">Submit Application</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+    <script>
+        const myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {});
+
+        setInterval(updateDate, 1000);
+
+        function updateDate() {
+            var today = new Date();
+            document.getElementById("currentdate").innerHTML = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate() + " "
+                + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        }
+
+        function review() {
+            myModal.hide();
+            displayToast();
+            setTimeout(() => {
+                goHome();
+            }, 1000)
+        }
+
+
+        function submit() {
+            var formValid = validate();
+            if (formValid) {
+                fillReview();
+                myModal.show();
+            }
+        }
+
+        function hideModal() {
+            myModal.hide();
+        }
+
+        function fillReview() {
+            var fNameValue = document.getElementById("f-name").value;
+            var lNameValue = document.getElementById("l-name").value;
+            var emailValue = document.getElementById("email").value;
+            var passwordValue = document.getElementById("password").value;
+            var cityValue = document.getElementById("city").value;
+            var dateValue = document.getElementById("date").value;
+            var category = document.getElementById("category").value;
+            var planValue = document.getElementById("plan").value;
+            var monthsValue = document.getElementById("months").value;
+            var radioList = document.getElementsByName("gender");
+            var genderValue = "";
+
+            for (let index = 0; index < radioList.length; index++) {
+                if (radioList[index].checked) {
+                    genderValue = radioList[index].value;
+                }
+            }
+
+            document.getElementById("name-p").innerHTML = fNameValue + " " + lNameValue;
+            document.getElementById("email-p").innerHTML = emailValue;
+            document.getElementById("gender-p").innerHTML = genderValue;
+            document.getElementById("city-p").innerHTML = cityValue;
+            document.getElementById("age-p").innerHTML = calculateAge();
+            document.getElementById("category-p").innerHTML = category;
+            document.getElementById("cost-p").innerHTML = calculateCost();
+        }
+
+        function calculateCost() {
+            var planValue = document.getElementById("plan").value;
+            var monthsValue = document.getElementById("months").value;
+            return parseInt(planValue) * parseInt(monthsValue)
+        }
+
+        function calculateAge() {
+            var dateValue = document.getElementById("date").value;
+            var ageDate = new Date(dateValue);
+            var today = new Date();
+            return today.getFullYear() - ageDate.getFullYear();
+        }
+
+        function validate() {
+            var fNameValue = document.getElementById("f-name").value;
+            var lNameValue = document.getElementById("l-name").value;
+            var emailValue = document.getElementById("email").value;
+            var passwordValue = document.getElementById("password").value;
+            var cityValue = document.getElementById("city").value;
+            var dateValue = document.getElementById("date").value;
+            var category = document.getElementById("category").value;
+            var planValue = document.getElementById("plan").value;
+            var monthsValue = document.getElementById("months").value;
+            var radioList = document.getElementsByName("gender");
+            var genderValue = "";
+
+            for (let index = 0; index < radioList.length; index++) {
+                if (radioList[index].checked) {
+                    genderValue = radioList[index].value;
+                }
+            }
+
+            var fNameValid = setMessage("msg-fname", fNameValue);
+            var lNameValid = setMessage("msg-lname", lNameValue);
+            var emailVlaid = setMessage("msg-email", emailValue);
+            var passwordValid = setMessage("msg-password", passwordValue);
+            var genderValid = setMessage("msg-gender", genderValue);
+            var cityValid = setMessage("msg-city", cityValue);
+            var dateValid = setMessage("msg-date", dateValue);
+            var planValid = setMessage("msg-plan", planValue);
+            var monthsValid = validateMonths(monthsValue);
+            var categoryValid = setMessage("msg-date", category);
+            if (fNameValid && lNameValid && emailVlaid && passwordValid && genderValid
+                && cityValid && dateValid && categoryValid && planValid && categoryValid) {
+                return true;
+            }
+        }
+
+        function validateMonths(value) {
+            if (!value) {
+                document.getElementById("msg-months").innerHTML = "This field is required";
+                return false;
+            } else if (parseInt(value) < 1) {
+                document.getElementById("msg-months").innerHTML = "Minimum duration is 1 month";
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
